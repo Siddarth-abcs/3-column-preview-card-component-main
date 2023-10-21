@@ -45,6 +45,7 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background: var(--Verylightgray);
 }
 
 .container{
@@ -74,6 +75,12 @@ body{
     margin-top: 3rem;
     font-weight: 700;
 }
+button:hover{
+    background: transparent;
+    color: var(--Verylightgray);
+    border: 2px solid var(--Verylightgray);
+}
+
 .column>header>h1{
     color: var(--Verylightgray);
     margin: 2rem auto 2rem auto;
