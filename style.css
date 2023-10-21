@@ -75,7 +75,7 @@ body{
     margin-top: 3rem;
     font-weight: 700;
 }
-button:hover{
+.column>button:hover{
     background: transparent;
     color: var(--Verylightgray);
     border: 2px solid var(--Verylightgray);
