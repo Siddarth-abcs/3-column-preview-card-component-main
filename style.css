@@ -1,0 +1,131 @@
+/* # Front-end Style Guide
+## Layout
+The designs were created to the following widths:
+- Mobile: 375px
+- Desktop: 1440px
+## Colors
+### Primary */
+/* - Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+- Weights: 400
+- Family: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display)
+- Weights: 700 */
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Hanken+Grotesk:wght@900&family=Inter:wght@700&family=Mulish&family=Outfit:wght@700&family=Poppins:wght@900&family=Red+Hat+Display:wght@500;900&family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Hanken+Grotesk:wght@900&family=Inter:wght@700&family=Lexend+Deca&family=Mulish&family=Outfit:wght@700&family=Poppins:wght@900&family=Red+Hat+Display:wght@500;900&family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+
+:root{
+    --Fontsize: 15px;
+    --BigShoulders: 'Big Shoulders Display', sans-serif;
+    --LexendDeca: 'Lexend Deca', sans-serif;
+
+    --Brightorange: hsl(31, 77%, 52%);
+    --Darkcyan: hsl(184, 100%, 22%);
+    --Verydarkcyan: hsl(179, 100%, 13%);
+
+    /* (paragraphs) */
+    --Transparenwhite: hsla(0, 0%, 100%, 0.75);
+
+    /* (background, headings, buttons) */
+    --Verylightgray: hsl(0, 0%, 95%);
+    
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container{
+    margin: 3rem;
+    max-width: 1440px;
+    height: 460px;
+    display: flex;
+}
+
+.box{
+    width: 300px;
+    height: inherit;
+}
+.column{
+    margin: 3rem;
+    height: 80%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+.column>button{
+    padding: 0.75rem 1.5rem;
+    border-radius: 2rem;
+    border: none;
+    margin-top: 3rem;
+    font-weight: 700;
+}
+.column>header>h1{
+    color: var(--Verylightgray);
+    margin: 2rem auto 2rem auto;
+    font-family: var(--BigShoulders);
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.column>header>p{
+    font-weight: 400;
+    color: var(--Transparenwhite);
+    font-size: 15px;
+    line-height: 1.3rem;
+    font-family: var(--LexendDeca);
+}
+
+
+.Sedans{
+    background: var(--Brightorange);
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+}
+.btna{
+    color: var(--Brightorange);
+}
+.SUVs{
+    background: var(--Darkcyan);
+}
+.btnb{
+    color: var(--Darkcyan);
+}
+.Luxury{
+    background: var(--Verydarkcyan);
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+}
+.btnc{
+    color: var(--Verydarkcyan);
+}
+
+@media screen and (max-width: 905px) {
+    body{
+        height: 1440px;
+        justify-content: space-between;
+    }
+    .attribution{
+        display: none;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .Sedans{
+        border-radius: 0.5rem 0.5rem 0rem 0rem;
+    }
+    .Luxury{
+        border-radius: 0rem 0rem 0.5rem 0.5rem;
+    }
+  }
